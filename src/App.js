@@ -1,25 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// import ListMenu from './components/list-menu/listMenu';
+import Videos from './components/videos/videos';
+import Activities from './components/activity/activity'
+import TopMenu from './components/top-menu/topMenu';
+import Footer from './components/footer/footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="background-primary">
+      <div className="container">
+        <TopMenu />
+        <div className="row">
+          <div className="col-7">
+            <Videos />
+          </div>
+          <div className="col-5">
+            <Activities />
+          </div>
+        </div>
+        <Footer />
+      </div>
     </div>
+    
   );
 }
 
