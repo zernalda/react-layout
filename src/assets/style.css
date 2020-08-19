@@ -1,3 +1,7 @@
+.margin-section{
+    margin-bottom: 50px;
+}
+
 .background-primary{
     background-color: #953E45;
 }
@@ -227,6 +231,26 @@
 }
 
 /* ACTIVITY */
+
+/* CHANNELS */
+
+.box-channels {
+    float: left;
+    /* width: 33.33%; */
+    padding: 50px;
+    margin: 10px;
+    color: black;
+  }
+
+  .border-channel-end{
+    border-bottom: solid;
+    border-width: 1.5px;
+    color: #F4E3CF;
+}
+  
+
+/* CHANNELS */
+
 
 /* FOOTER */
 
