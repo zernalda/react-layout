@@ -35,9 +35,9 @@ class ListChannels extends Component {
                 data.slice(0,8).map(datas => {
                     const {name} = datas
                     return (
-                            <div  className="col-5 layar box-channels">
-                                <p onMouseEnter={this.changeBackground} onMouseLeave={this.startBackground}>{name}</p>
-                            </div>
+                        <div  className="col-5 layar box-channels" key={name}>
+                            <p onMouseEnter={this.changeBackground} onMouseLeave={this.startBackground}>{name}</p>
+                        </div>
                     );
                 }):<p>loading</p>
             }  

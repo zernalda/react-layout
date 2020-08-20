@@ -16,14 +16,20 @@ class ActivityList extends Component {
           );
     }
 
-    changeBackground= (e) => {
+    changeBackground = (e) => {
         e.target.style.border = 'solid';
     }
 
-    startBackground= (e) => {
+    startBackground = (e) => {
         e.target.style.border = "hidden"; 
-    }    
+        e.target.style.backgroundColor = 'transparent'
+    }
 
+    lightBackground = (e) => {
+        e.target.style.backgroundColor = 'black';
+    }
+   
+    
     render() {
         const {data} = this.state;
         // console.log("data ini isi state LIST: " + JSON.stringify(data));
@@ -35,8 +41,8 @@ class ActivityList extends Component {
                     return (
                         // onMouseLeave={this.startBackground} onMouseOver={this.changeBackground}
                         // eslint-disable-next-line no-undef
-                        <div key={id}  className="row background-activity" onMouseEnter={this.changeBackground} onMouseLeave={this.startBackground}>
-                        <div  className="col-3 layar"></div>
+                        <div key={id} id="dcalc"  className="row background-activity" onMouseOver={this.changeBackground} onMouseLeave={this.startBackground} onClick={this.lightBackground}>
+                        <div  className="col-3 layar no-border"></div>
                             <div className="col-8 margin-list no-border" >
                                 <ul key={id} className="no-list list-name-position text-color no-border" >
                                     <li className="caption no-border">

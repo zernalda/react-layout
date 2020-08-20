@@ -200,6 +200,7 @@
 }
 .no-border{
     border: hidden !important;
+    pointer-events:none
 }
 
 .position-left{
